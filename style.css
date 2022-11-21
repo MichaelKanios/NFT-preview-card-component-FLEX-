@@ -30,10 +30,24 @@ background-color: hsl(216, 50%, 16%);
 border:20px solid hsl(216, 50%, 16%);
 border-radius: 10px;
 }
-.main_container .main_photo{
+/*.main_container .main_photo{
   width:300px;
   height: 300px;
   border-radius: 20px;
+}*/
+.photo_blend{
+  background-image: url("images/image-equilibrium.jpg");
+  background-size: cover;
+  width:300px;
+  height: 300px;
+  border-radius: 20px;
+
+
+}
+.photo_blend:hover{
+  cursor: pointer;
+  background-image: url("images/icon-view.svg"),url("images/image-equilibrium.jpg");
+  background-blend-mode: overlay;
 }
 .main_text h3{
   font-size: 20px;
@@ -81,6 +95,14 @@ border-radius: 10px;
 span{
   color:hsl(0, 0%, 100%);
   font-weight: 300px;
+}
+.main_text h3:hover{
+  cursor:pointer;
+  color: rgb(12, 237, 221);
+}
+span:hover{
+  cursor:pointer;
+  color: rgb(12, 237, 221);
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
